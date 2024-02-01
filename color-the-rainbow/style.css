@@ -1,0 +1,95 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+
+.container {
+  background-color: #fae09d;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  background-color: red;
+  height: 200px;
+  width: 400px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.second {
+  background-color: orange;
+  height: 180px;
+  width: 360px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.third {
+  background-color: yellow;
+  height: 160px;
+  width: 320px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.fourth {
+  background-color: green;
+  height: 140px;
+  width: 280px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.fifth {
+  background-color: blue;
+  height: 120px;
+  width: 240px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.sixth {
+  background-color: indigo;
+  height: 100px;
+  width: 200px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.seventh {
+  background-color: violet;
+  height: 80px;
+  width: 160px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+.last {
+  background-color: #fae09d;
+  height: 60px;
+  width: 120px;
+  top: 20px;
+  left: 20px;
+  border-radius: 275px 275px 0 0;
+  position: relative;
+}
+
+
