@@ -1,0 +1,61 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Technology-Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Technology-Bold'), url('Technology-Bold.woff') format('woff');
+}
+
+body {
+  background-color: black;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* We have to provide the height otherwise it will not get align vertically in the center */
+  min-height: 100vh; 
+  font-family:'Technology-Bold';
+}
+
+.clock {
+  width: 100%;
+  max-width: 380px;
+  height: 24vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 40px rgba(255, 0, 0, 0.1), 0px 10px 40px rgba(255, 0, 0, 0.7);
+}
+
+#time{
+  font-weight: bolder;
+  font-size: 4.6rem;
+}
+
+#time-format {
+  position: relative;
+  top: -13%;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 274px) {
+  .clock {
+    max-width: 210px;
+  }
+  #time {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 274px) and (max-width: 400px){
+  .clock {
+    max-width: 260px;
+  }
+  #time {
+    font-size: 2.4rem;
+  }
+}
