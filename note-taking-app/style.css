@@ -2,18 +2,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     margin: 0;
 }
 
-.container {
+.main-container {
     text-align: center;
-    border: 1px solid #ccc;
-    padding: 20px;
+    /* border: 1px solid #ccc; */
+    padding: 5px;
     border-radius: 5px;
+    margin-block-start: 10px;
 }
 
-.note-form {
+.input-container {
     margin: 10px 0;
 }
 
@@ -23,13 +24,25 @@ input {
     margin-right: 10px;
 }
 
-button {
-    background-color: #0074d9;
+#addBtn{
+    background-color: green;
     color: white;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    padding: 2px;
+    width: 40px;
+    height: 30px;
+}
+
+.removeBtn{
+    background-color: white;
+    color: red;
+    border: none;
+    cursor: pointer;
+    padding: 2px;
+    width: 50px;
+    height: 30px;
 }
 
 ul {
@@ -40,18 +53,12 @@ ul {
 li {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
+    padding: 9px;
     margin: 5px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 30px;
 }
 
-.delete-button {
-    background-color: #ff4136;
-    color: white;
-    padding: 5px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-}
 
