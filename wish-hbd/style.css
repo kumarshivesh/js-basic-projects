@@ -1,0 +1,40 @@
+body {
+  /* font-family: sans-serif; */
+  /* font-family:'Technology-Bold'; */
+  font-family: 'Autumn Flowers';
+  margin: 0;
+  padding: 0rem;
+  background-color: #2d2c2c;
+  color: #959090;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Autumn Flowers';
+  src: url('AutumnFlowers-9YVZK.otf') format('opentype');
+}
+
+.main-container {
+  margin: 3rem auto;
+  padding: 1rem;
+  width: 15rem;
+  border: 2px solid #ff0000;
+  /* background-color: #776167; */
+  /* color: white; */
+  color: #ff0000;
+}
+
+.display-message {
+  color: #ff0000;
+}
+
+.btn {
+  /* font: inherit; */
+  font-family: sans-serif;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  background-color: 540218;
+  color: #dd3562;
+  border-radius: 4px;
+  cursor: pointer;
+}
