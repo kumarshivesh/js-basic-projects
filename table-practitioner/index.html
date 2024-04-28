@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Practitioner</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="main-container">
+    <p class="title">Enter the number for which you want to practice the table</p>
+    <form class="form">
+      
+      <input placeholder="Enter number" type="text" class="entered-number"/>
+      <input type="submit" class="btn"/>
+    </form>
+    
+  
+    <div class="table-container">
+      <!-- Blank multiplication table will be inserted here -->
+    </div>
+  
+    <!-- Button to evaluate the table -->
+    <button class="evaluate-btn btn">Evaluate Your Table</button>
+    <div class="display-result">
+     
+    </div>
+    <button class="reset-btn btn">Reset</button> 
+    <div class="pop-container">
+      <button type="button" class="pop-close-btn">
+        <i class="fa-solid fa-square-xmark"></i>
+      </button>
+      <div class="pop-message"></div>
+    </div>
+  </div>
+  <script  type="module" src="script.js"></script>
+  <script src="https://kit.fontawesome.com/1f959912e2.js" crossorigin="anonymous"></script>
+</body>
+</html>

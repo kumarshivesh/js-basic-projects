@@ -1,0 +1,165 @@
+body {
+  font-family: 'Levitation', 'HOLYSWEET', 'Autumn Flowers', 'a Alloy Ink', 'KBSticktoit';
+  margin: 0;
+  padding: 0rem;
+  background-color: #9fd7fa;
+  color: #2a2a2a;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Levitation';     
+  src: url('./fonts/levitation-font/Levitation-7BnPB.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'HOLYSWEET';     
+  src: url('./fonts/holysweet-font/Holysweet-rgn4K.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Autumn Flowers';
+  src: url('./fonts/autumnflowers-font/AutumnFlowers-9YVZK.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'a Alloy Ink';
+  src: url('./fonts/a-alloy-ink-font/AlloyInk-lgdWw.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'KBSticktoit';     
+  src: url('./fonts/kbsticktoit-font/Kbsticktoit-vJ3M.ttf') format('truetype');
+}
+
+.title{
+  margin-block: 1rem;
+}
+
+.form{
+  margin-block: 1rem;
+}
+
+.entered-number{
+  font-family: 'HOLYSWEET'; 
+  font-size: 1rem;
+  padding: 0.3rem 1.5rem;
+  border-radius: 20px;
+  border: 1px solid #f686d1; /* Outside border color */
+  background: #fbe20c;
+}
+
+/* Style for the inside border when input is focused */
+.entered-number:focus {
+  outline: none; /* Remove default focus outline */
+  border: 0.2rem solid #f686d1;
+}
+
+.btn {
+  /* font: inherit; */
+  font-family: 'HOLYSWEET';
+  border: none;
+  padding: 0.4rem 1.5rem;
+  background-color: 540218;
+  color: #f686d1;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Resetting default padding and margin */
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove default list style */
+}
+
+.answer-input{
+  font-family: 'HOLYSWEET';
+}
+
+.correct-answer {
+  color: green;
+}
+
+.wrong-answer {
+  color: red;
+}
+
+.evaluate-btn, .reset-btn{
+  display: none;
+  margin: 0rem auto;
+  margin-block: 1rem;
+}
+
+/* pop-container */
+.pop-container{
+  display: none;
+  position: fixed;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  background: transparent;
+  box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5);
+  background-color: rgba(251, 226, 12, 0.7);
+  border: 1px solid #717377;
+  border-radius: 12px;
+  width: 40%;
+  height: 70%;
+  font-size: 0.8rem;
+  transition: all 0.5s ease-in-out;
+  @media screen and (max-width: 425px) {
+    width: 90%;
+  };
+  @media screen and (min-width: 425px) and (max-width: 768px) {
+    width: 60%;
+  }
+}
+
+.pop-message h1 {
+  margin-top: 5rem;
+}
+
+.pop-message h1 span{
+  font-family: 'Autumn Flowers';
+  font-size: 3rem;
+  color: #f44336;
+  @media screen and (max-width: 1024px) {
+    font-size: 2rem;
+  }
+}
+
+.pop-message p{
+  font-family: 'a Alloy Ink';
+  font-size: 2rem;
+  color: green;
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
+}
+
+.pop-close-btn{
+  background: none;
+  border: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f44336;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 20px;
+  height: 15px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.pop-close-btn i{
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 5.5px;
+  right: 8px;
+  color: #ffffff;
+}
