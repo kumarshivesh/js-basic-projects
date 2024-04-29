@@ -15,7 +15,7 @@ const sound = new Audio('./audio/small-applause-6695.mp3');
 const generateBlankTable = (number) => {
   let table = '';
   for (let i = 1; i <= 10; i++) {
-    table += `<li>${number} X ${i} = <input class="answer-input" data-answer="${number * i}" /><span class="result-icon"></span></li>`;
+    table += `<li>${number} X ${i} = <input type="number" class="answer-input" data-answer="${number * i}" required /><span class="result-icon"></span></li>`;
   }
   return table;
 }
