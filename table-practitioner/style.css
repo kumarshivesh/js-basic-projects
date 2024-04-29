@@ -33,11 +33,11 @@ body {
 }
 
 .title{
-  margin-block: 1rem;
+  margin-block: 0.8rem;
 }
 
 .form{
-  margin-block: 1rem;
+  margin-block: 0.8rem;
 }
 
 .entered-number{
@@ -162,4 +162,32 @@ li {
   top: 5.5px;
   right: 8px;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .title{
+    font-size: 2rem;
+  }
+  .entered-number {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
+  li {
+    font-size: 1.5rem;
+  }
+  .answer-input {
+    font-size: 1.5rem;
+  }
+  .pop-container {
+    width: 75%;
+    height: 87%;
+  }
+  .pop-message h1 span {
+    font-size: 8rem;
+  }
+  .pop-message p {
+    font-size: 4.5rem;
+  }
 }
