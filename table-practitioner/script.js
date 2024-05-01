@@ -60,6 +60,14 @@ evaluateBtn.addEventListener('click', () => {
   if (correctAnswerInputs.length === 10) {
     openPopup()
   }
+
+  // Disable all input fields
+  answerInputs.forEach(input => {
+    input.disabled = true;
+  });
+
+  // Disable the evaluate button
+  evaluateBtn.disabled = true;
 });
 
 // Event listener for the reset button
@@ -80,4 +88,5 @@ const openPopup = () => {
 
 popCloseBtn.addEventListener('click', ()=> {
   popMessage.parentElement.style.display = 'none'
+  location.reload(); // Reload the page
 })
